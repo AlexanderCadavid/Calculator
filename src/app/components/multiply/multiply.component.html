@@ -1,0 +1,22 @@
+<form class="app-multiply" id="multiply" [formGroup]="calculatorForm" (ngSubmit)="answer()">
+    <div>
+        <img src="https://media.tenor.com/iKq0McbAqCMAAAAC/math-zach-galifianakis.gif">
+        <h1>Multiply *</h1>
+        <label>Value 1</label>
+        <input formControlName="Number1" type="number" id="value1" size="20" placeholder="Add a number">
+    </div>
+    <div>
+        <div>
+            <label>Value 2</label>
+            <input formControlName="Number2" type="number" id="value2" size="20" placeholder="Add a number">
+        </div>
+        <div>
+            <label>Result </label>
+            <output>{{this.result}}</output>
+        </div>
+        <div>
+            <button type="submit" form="multiply">Calculate</button>
+            <button type="reset">Clean</button>
+        </div>
+    </div>
+</form>
